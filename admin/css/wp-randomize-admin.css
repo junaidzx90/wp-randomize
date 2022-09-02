@@ -1,0 +1,62 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+#randomize{
+    width: 75%;
+}
+.randomize_field {
+    display: flex;
+    margin-bottom: 20px;
+}
+.randomize_field .random_th {
+    width: 20%;
+}
+.randomize_field .random_td {
+    width: 80%;
+}
+.random_inner_field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+.random_dynamic_fields {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    background: #fff;
+}
+.rands_inner_field {
+    position: relative;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+.rands_inner_field:first-child{
+    padding-top: 0;
+}
+.rands_inner_field:last-child{
+    border-bottom: none;
+    padding-bottom: 0;
+}
+.rands_inner_field input{
+    margin-right: 10px;
+}
+span.remove_rand_field {
+    font-size: 26px;
+    color: red;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 15px;
+    cursor: pointer;
+    user-select: none;
+}
+.rands_inner_field:first-child span.remove_rand_field {
+    top: 3px;
+}
+span.rand_field_count {
+    width: 30px;
+    display: inline-block;
+    color: #2196f3;
+    font-weight: 500;
+}
